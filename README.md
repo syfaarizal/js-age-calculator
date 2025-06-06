@@ -24,13 +24,13 @@ Program akan:
 <pre><code>Kamu lahir pada tahun 2005. ```
 Sekarang tahun 2025. ```
 Artinya kamu berusia 20 tahun 🎉 ```
-Tahun depan kamu akan berusia 21 tahun.<pre><code>
+Tahun depan kamu akan berusia 21 tahun.</code></pre>
 
 
 Jika input dari user tidak valid (misal huruf atau kosong), program akan memberi peringatan.  
 Jika user memasukkan tahun lahir dari masa depan, akan muncul pesan:
 
-<pre><code>Kamu berasal dari masa depan? 🛸<pre><code>
+<pre><code>Kamu berasal dari masa depan? 🛸</code></pre>
 
 
 ---
