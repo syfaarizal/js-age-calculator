@@ -51,3 +51,15 @@ if (isNaN(lahir)) {
 } else {
     console.log(`Kamu lahir pada tahun ${birthYear}.\nSekarang tahun ${tahunSkrg}.\nArtinya kamu berusia ${usia} tahun 🎉\nTahun depan kamu akan berusia ${tahunDpn} tahun.`);
 }
+```
+
+## 📌 Author
+
+Made with logika dan sedikit vibes ngelawak oleh  
+**Syifa Fauziyah Arizal**  
+[GitHub](https://github.com/syfaarizal) • [Portfolio](https://syfaarizal.github.io/sicoder-main-portfolio/)
+
+---
+
+> “Logic might be binary, but the way we treat users shouldn't be.”  
+> Let’s go to [Day 3: Mini Kalkulator Interaktif](#) 📝
