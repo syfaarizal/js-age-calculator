@@ -62,4 +62,4 @@ Made with logika dan sedikit vibes ngelawak oleh
 ---
 
 > “Logic might be binary, but the way we treat users shouldn't be.”  
-> Let’s go to [Day 3: Mini Kalkulator Interaktif](#) 📝
+> Let’s go to [Day 3: Mini Kalkulator Interaktif](https://github.com/syfaarizal/js-mini-calculator) 📝
