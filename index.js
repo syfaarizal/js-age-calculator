@@ -1,14 +1,14 @@
-// Challenge Day 2
-const birthYear = prompt("Masukan tahun lahir anda: ");
-const lahir = parseInt(birthYear);
-const tahunSkrg = new Date().getFullYear();
-const usia = tahunSkrg - lahir;
-const tahunDpn = usia + 1;
+const birthYear = prompt("Enter your birth year: ");
+const birth = parseInt(birthYear);
+const currentYear = new Date().getFullYear();
+const age = currentYear - birth;
+const nextYear = age + 1;
 
-if (isNaN(lahir)) {
-    console.log("Input tidak valid. Harap masukkan angka tahun lahir.");
-} else if (lahir > tahunSkrg) {
-    console.log("Kamu berasal dari masa depan? 🛸");
+if (isNaN(birth)) {
+    console.log("Invalid input. Please enter a valid birth year.");
+} else if (birth > currentYear) {
+    console.log("Are you from the future? 🛸");
 } else {
-    console.log(`Kamu lahir pada tahun ${birthYear}.\nSekarang tahun ${tahunSkrg}.\nArtinya kamu berusia ${usia} tahun 🎉\nTahun depan kamu akan berusia ${tahunDpn} tahun.`);
+    console.log(`You were born in ${birthYear}.\nThe current year is ${currentYear}.\nThat means you're ${age} years old 🎉\nNext year you'll be ${nextYear} years old.`);
 }
+          

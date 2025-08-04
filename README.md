@@ -1,65 +1,67 @@
-# 🧮 JavaScript Challenge — Day 2: Kalkulator Umur
+# 🧮 JavaScript Challenge — Day 2: Age Calculator
 
-Ini adalah bagian dari tantangan harian JavaScript saya (Code Sprint 30).  
-Di challenge ini, saya membuat program kalkulator umur berdasarkan input tahun lahir dari user.
+This is part of my daily JavaScript challenge (Code Sprint 30).  
+In this challenge, I'm building an age calculator program based on user's birth year input.
 
-## 🎯 Tujuan Challenge
+## 🎯 Challenge Goals
 
-- Belajar mengambil input dari user
-- Melatih logika dasar `if-else`
-- Menggunakan objek `Date` untuk mendapatkan tahun saat ini
-- Menghindari kesalahan tipe data dengan `parseInt()`
-- Menangani input tidak valid dari user
-- Memformat output agar lebih mudah dibaca
-
----
-
-## 💻 Deskripsi Program
-
-Program akan:
-1. Meminta user memasukkan **tahun lahir**
-2. Menghitung **umur saat ini**
-3. Menampilkan pesan seperti:
-
-<pre><code>Kamu lahir pada tahun 2005. ```
-Sekarang tahun 2025. ```
-Artinya kamu berusia 20 tahun 🎉 ```
-Tahun depan kamu akan berusia 21 tahun.</code></pre>
-
-
-Jika input dari user tidak valid (misal huruf atau kosong), program akan memberi peringatan.  
-Jika user memasukkan tahun lahir dari masa depan, akan muncul pesan:
-
-<pre><code>Kamu berasal dari masa depan? 🛸</code></pre>
-
+- Learn to get user input
+- Practice basic `if-else` logic
+- Use `Date` object to get current year
+- Prevent data type errors with `parseInt()`
+- Handle invalid user input
+- Format output for better readability
 
 ---
 
-## 📦 Source Code Utama
+## 💻 Program Description
+
+The program will:
+1. Ask user to enter their **birth year**
+2. Calculate their **current age**
+3. Display a message like:
+
+<pre><code>
+You were born in 2005.
+Current year is 2025.
+That means you're 20 years old 🎉
+Next year you'll be 21 years old.
+</code></pre>
+
+
+If user input is invalid (letters or empty), the program will show a warning.
+If user enters a future birth year, it will display:
+
+<pre><code>Are you from the future? 🛸</code></pre>
+
+
+---
+
+## 📦 Main Source Code
 
 ```js
-const birthYear = prompt("Masukan tahun lahir anda: ");
-const lahir = parseInt(birthYear);
-const tahunSkrg = new Date().getFullYear();
-const usia = tahunSkrg - lahir;
-const tahunDpn = usia + 1;
+const birthYear = prompt("Enter your birth year: ");
+const bornYear = parseInt(birthYear);
+const currentYear = new Date().getFullYear();
+const age = currentYear - bornYear;
+const nextYearAge = age + 1;
 
-if (isNaN(lahir)) {
-    console.log("Input tidak valid. Harap masukkan angka tahun lahir.");
-} else if (lahir > tahunSkrg) {
-    console.log("Kamu berasal dari masa depan? 🛸");
+if (isNaN(bornYear)) {
+    console.log("Invalid input. Please enter a valid birth year.");
+} else if (bornYear > currentYear) {
+    console.log("Are you from the future? 🛸");
 } else {
-    console.log(`Kamu lahir pada tahun ${birthYear}.\nSekarang tahun ${tahunSkrg}.\nArtinya kamu berusia ${usia} tahun 🎉\nTahun depan kamu akan berusia ${tahunDpn} tahun.`);
+    console.log(`You were born in ${birthYear}.\nCurrent year is ${currentYear}.\nThat means you're ${age} years old 🎉\nNext year you'll be ${nextYearAge} years old.`);
 }
 ```
 
 ## 📌 Author
 
-Made with logika dan sedikit vibes ngelawak oleh  
+Made with logic and a bit of humor by  
 **Syifa Fauziyah Arizal**  
 [GitHub](https://github.com/syfaarizal) • [Portfolio](https://syfaarizal.github.io/sicoder-main-portfolio/)
 
 ---
 
 > “Logic might be binary, but the way we treat users shouldn't be.”  
-> Let’s go to [Day 3: Mini Kalkulator Interaktif](https://github.com/syfaarizal/js-mini-calculator) 📝
+> Let’s go to [Day 3: Interactive Mini Calculator](https://github.com/syfaarizal/js-mini-calculator) 📝
